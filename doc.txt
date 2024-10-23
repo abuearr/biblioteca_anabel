@@ -1,1 +1,24 @@
-hola, esto es un documento.
+package prog.unidad03.seleccion;
+
+import java.util.Scanner; 
+public class EsParImparApp6 {
+	
+	public static void main(String[] args) {
+		
+		Scanner escaner = new Scanner(System.in); 
+		System.out.println("Introduce un número. ");
+		int numero = Integer.parseInt(escaner.nextLine()); 
+		escaner.close();
+		
+		int resto = numero % 2;
+		boolean  resultado = resto == 1;
+		System.out.println(resultado);
+		
+	if (resultado == true) {
+		System.out.println("Es impar");
+	}  else if (resultado == false){
+		System.out.println("Es par");
+	}
+	}
+}
+
